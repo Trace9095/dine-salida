@@ -3,6 +3,7 @@ import { z } from 'zod'
 import { getDb } from '@/db'
 import { schema } from '@/db'
 import { slugify } from '@/lib/utils'
+import { sendListingConfirmation, notifyCeoNewListing } from '@/lib/email'
 
 const ListingSchema = z.object({
   restaurantId: z.number().int().positive().optional(),
@@ -76,6 +77,22 @@ export async function POST(req: NextRequest) {
         status: 'pending',
       })
       .returning()
+
+    // Fire-and-forget emails — don't block the response
+    const businessName = data.name ?? `Restaurant #${restaurantId}`
+    void sendListingConfirmation({
+      ownerName: data.ownerName,
+      ownerEmail: data.ownerEmail,
+      businessName,
+      tier: data.tier,
+    }).catch(() => {})
+    void notifyCeoNewListing({
+      ownerName: data.ownerName,
+      ownerEmail: data.ownerEmail,
+      businessName,
+      tier: data.tier,
+      restaurantId,
+    }).catch(() => {})
 
     return NextResponse.json({ success: true, listing: listing[0] }, { status: 201 })
   } catch (err) {

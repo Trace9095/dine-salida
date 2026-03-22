@@ -11,8 +11,8 @@ function getStripe() {
 }
 
 const PRICES: Record<string, number> = {
-  premium: 4900,   // $49.00
-  sponsored: 9900, // $99.00
+  premium: 9900,    // $99.00
+  sponsored: 19900, // $199.00
 }
 
 const CheckoutSchema = z.object({

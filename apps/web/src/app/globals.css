@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0D1117;
-  --color-foreground: #E6EDF3;
-  --color-gold: #D4A853;
-  --color-gold-light: #E8C97A;
-  --color-gold-dark: #B8923F;
-  --color-surface: #161B22;
-  --color-surface-hover: #1C2333;
-  --color-border: #30363D;
-  --color-muted: #8B949E;
-  --color-destructive: #F85149;
-  --color-success: #3FB950;
+  /* Mountain dining palette — unique to Dine Salida */
+  --color-background: #0D1B0E;
+  --color-foreground: #F0F4EF;
+  --color-amber: #F59E0B;
+  --color-amber-light: #FCD34D;
+  --color-amber-dark: #D97706;
+  --color-evergreen: #2D5016;
+  --color-evergreen-light: #3B6B1E;
+  --color-surface: #131F14;
+  --color-surface-hover: #192619;
+  --color-border: #253826;
+  --color-muted: #7A9B7D;
+  --color-destructive: #EF4444;
+  --color-success: #22C55E;
 
   --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
@@ -37,14 +40,14 @@
 * { box-sizing: border-box; }
 
 body {
-  background: #0D1117;
-  color: #E6EDF3;
+  background: #0D1B0E;
+  color: #F0F4EF;
   -webkit-font-smoothing: antialiased;
 }
 
 button, a { -webkit-tap-highlight-color: transparent; }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #0D1117; }
-::-webkit-scrollbar-thumb { background: #30363D; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #D4A853; }
+::-webkit-scrollbar-track { background: #0D1B0E; }
+::-webkit-scrollbar-thumb { background: #253826; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #F59E0B; }

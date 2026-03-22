@@ -20,7 +20,7 @@ const TIERS = [
     iconColor: 'text-[#3FB950]',
     cta: 'Get Started Free',
     ctaHref: '/add-listing',
-    ctaStyle: 'border border-[#30363D] text-[#E6EDF3] hover:border-[#D4A853] hover:text-[#D4A853]',
+    ctaStyle: 'border border-[#253826] text-[#F0F4EF] hover:border-[#D4A853] hover:text-[#D4A853]',
     popular: false,
     features: [
       'Basic listing in directory',
@@ -34,14 +34,14 @@ const TIERS = [
   {
     id: 'premium',
     label: 'Premium',
-    price: '$49',
+    price: '$99',
     period: '/month',
     description: 'Stand out with an enhanced profile and priority placement.',
     icon: TrendingUp,
-    iconColor: 'text-[#D4A853]',
+    iconColor: 'text-[#F59E0B]',
     cta: 'Start Premium',
     ctaHref: '/add-listing?tier=premium',
-    ctaStyle: 'bg-[#D4A853] text-[#0D1117] hover:bg-[#E8C97A]',
+    ctaStyle: 'bg-[#F59E0B] text-[#0D1B0E] hover:bg-[#FCD34D]',
     popular: true,
     features: [
       'Everything in Free',
@@ -57,14 +57,14 @@ const TIERS = [
   {
     id: 'sponsored',
     label: 'Sponsored',
-    price: '$99',
+    price: '$199',
     period: '/month',
     description: 'Maximum visibility with homepage placement and analytics.',
     icon: Award,
-    iconColor: 'text-[#D4A853]',
+    iconColor: 'text-[#F59E0B]',
     cta: 'Go Sponsored',
     ctaHref: '/add-listing?tier=sponsored',
-    ctaStyle: 'border border-[#D4A853] text-[#D4A853] hover:bg-[#D4A853]/10',
+    ctaStyle: 'border border-[#F59E0B] text-[#F59E0B] hover:bg-[#F59E0B]/10',
     popular: false,
     features: [
       'Everything in Premium',
@@ -81,15 +81,15 @@ const TIERS = [
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-[#0D1117]">
+    <div className="min-h-screen bg-[#0D1B0E]">
       <Nav />
       <main className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="text-3xl font-bold text-[#E6EDF3] sm:text-4xl">
+          <h1 className="text-3xl font-bold text-[#F0F4EF] sm:text-4xl">
             Simple, Transparent Pricing
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-[#8B949E]">
+          <p className="mx-auto mt-4 max-w-2xl text-[#7A9B7D]">
             Get your Salida restaurant in front of thousands of diners. Start free and upgrade
             when you are ready to grow.
           </p>
@@ -104,13 +104,13 @@ export default function PricingPage() {
                 key={tier.id}
                 className={`relative flex flex-col rounded-2xl border p-8 ${
                   tier.popular
-                    ? 'border-[#D4A853] bg-[#161B22] shadow-lg shadow-[#D4A853]/10'
-                    : 'border-[#30363D] bg-[#161B22]'
+                    ? 'border-[#D4A853] bg-[#131F14] shadow-lg shadow-[#D4A853]/10'
+                    : 'border-[#253826] bg-[#131F14]'
                 }`}
               >
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="rounded-full bg-[#D4A853] px-4 py-1 text-sm font-bold text-[#0D1117]">
+                    <span className="rounded-full bg-[#D4A853] px-4 py-1 text-sm font-bold text-[#0D1B0E]">
                       Most Popular
                     </span>
                   </div>
@@ -119,15 +119,15 @@ export default function PricingPage() {
                 <div className="mb-6">
                   <div className="mb-3 flex items-center gap-3">
                     <Icon className={`h-6 w-6 ${tier.iconColor}`} aria-hidden="true" />
-                    <h2 className="text-xl font-bold text-[#E6EDF3]">{tier.label}</h2>
+                    <h2 className="text-xl font-bold text-[#F0F4EF]">{tier.label}</h2>
                   </div>
                   <div className="mb-2 flex items-baseline gap-1">
-                    <span className="text-4xl font-bold text-[#E6EDF3]">{tier.price}</span>
+                    <span className="text-4xl font-bold text-[#F0F4EF]">{tier.price}</span>
                     {tier.period && (
-                      <span className="text-sm text-[#8B949E]">{tier.period}</span>
+                      <span className="text-sm text-[#7A9B7D]">{tier.period}</span>
                     )}
                   </div>
-                  <p className="text-sm text-[#8B949E]">{tier.description}</p>
+                  <p className="text-sm text-[#7A9B7D]">{tier.description}</p>
                 </div>
 
                 <ul className="mb-8 flex-1 space-y-3">
@@ -137,7 +137,7 @@ export default function PricingPage() {
                         className="mt-0.5 h-4 w-4 shrink-0 text-[#D4A853]"
                         aria-hidden="true"
                       />
-                      <span className="text-sm text-[#8B949E]">{feature}</span>
+                      <span className="text-sm text-[#7A9B7D]">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -155,7 +155,7 @@ export default function PricingPage() {
 
         {/* FAQ */}
         <div className="mt-16">
-          <h2 className="mb-8 text-center text-2xl font-bold text-[#E6EDF3]">
+          <h2 className="mb-8 text-center text-2xl font-bold text-[#F0F4EF]">
             Frequently Asked Questions
           </h2>
           <div className="mx-auto max-w-2xl space-y-4">
@@ -179,10 +179,10 @@ export default function PricingPage() {
             ].map((item) => (
               <div
                 key={item.q}
-                className="rounded-xl border border-[#30363D] bg-[#161B22] p-5"
+                className="rounded-xl border border-[#253826] bg-[#131F14] p-5"
               >
-                <h3 className="mb-2 font-semibold text-[#E6EDF3]">{item.q}</h3>
-                <p className="text-sm text-[#8B949E]">{item.a}</p>
+                <h3 className="mb-2 font-semibold text-[#F0F4EF]">{item.q}</h3>
+                <p className="text-sm text-[#7A9B7D]">{item.a}</p>
               </div>
             ))}
           </div>
