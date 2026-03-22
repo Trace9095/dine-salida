@@ -108,7 +108,7 @@ export default async function RestaurantPage({ params }: PageProps) {
             quality={90}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/40 via-transparent to-transparent" />
         </div>
       )}
 

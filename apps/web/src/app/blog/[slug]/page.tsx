@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           quality={90}
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/50 via-transparent to-transparent" />
       </div>
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
