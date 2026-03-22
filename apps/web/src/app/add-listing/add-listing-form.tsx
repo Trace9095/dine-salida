@@ -83,7 +83,7 @@ export default function AddListingForm() {
         body: JSON.stringify({
           ...form,
           slug: slugify(form.name),
-          tier: 'free',
+          tier: 'premium',
         }),
       })
       if (res.ok) {
@@ -260,7 +260,7 @@ export default function AddListingForm() {
         className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-[#D4A853] font-semibold text-[#0D1117] transition-colors hover:bg-[#E8C97A] disabled:opacity-50"
       >
         <Send className="h-4 w-4" aria-hidden="true" />
-        {status === 'loading' ? 'Submitting...' : 'Submit Free Listing'}
+        {status === 'loading' ? 'Submitting...' : 'Submit Your Listing'}
       </button>
     </form>
   )

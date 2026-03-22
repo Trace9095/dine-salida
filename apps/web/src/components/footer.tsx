@@ -49,6 +49,7 @@ export default function Footer() {
                 { href: '/pricing', label: 'Pricing' },
                 { href: '/add-listing', label: 'Add Your Business' },
                 { href: '/request-listing', label: 'Request a Listing' },
+                { href: '/partners/whitewater-bar-grill', label: 'Worth the Drive' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -96,7 +97,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { href: 'https://whitewaterbar.com', label: 'Whitewater Bar & Grill', sub: 'Riverside dining' },
+                { href: 'https://whitewaterbar.com', label: 'Whitewater Bar & Grill', sub: '#1 near Royal Gorge' },
                 { href: 'https://wwrooftopsocial.com', label: 'Rooftop Social', sub: 'Downtown rooftop bar' },
               ].map((item) => (
                 <li key={item.href}>

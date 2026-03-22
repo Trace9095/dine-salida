@@ -16,8 +16,8 @@ export default function AddListingPage() {
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-[#E6EDF3]">Add Your Restaurant</h1>
           <p className="mt-2 text-[#8B949E]">
-            Submit your Salida dining business to our directory. Free listings are reviewed
-            within 1–2 business days.
+            Submit your Salida dining business to our directory. Listings start at $99/month
+            and are reviewed within 1–2 business days.
           </p>
         </div>
         <AddListingForm />
