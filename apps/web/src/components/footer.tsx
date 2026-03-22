@@ -17,7 +17,7 @@ export default function Footer() {
             {', '}
             <a href="https://royalgorgeziplinetours.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#F59E0B]">zipline tours</a>
             {', and '}
-            <a href="https://whitewaterbar.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#F59E0B]">riverside dining</a>
+            <a href="https://whitewaterbar.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#F59E0B]">legendary dining</a>
             {' await.'}
           </p>
         </div>

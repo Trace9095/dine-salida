@@ -73,8 +73,8 @@ export default function WaterwaterBarGrillPage() {
               </div>
 
               <p className="mb-6 max-w-xl text-[#8B949E] leading-relaxed">
-                Western-style restaurant &amp; bar near Royal Gorge — Colorado-raised beef,
-                undefeated flavors, legendary portions. Live music, an outdoor patio,
+                Undefeated Flavors. Legendary Portions. Western-style restaurant &amp; bar
+                near Royal Gorge — Colorado-raised beef, live music, an outdoor patio,
                 and 80+ menu items that keep diners coming back all season long.
               </p>
 
