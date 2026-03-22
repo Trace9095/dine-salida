@@ -371,6 +371,8 @@ export default async function HomePage() {
               >
                 <ExternalLink className="h-3.5 w-3.5 text-[#D4A853]" aria-hidden="true" />
                 <span>Vacation Rentals</span>
+                <span className="text-[#30363D]">·</span>
+                <a href="tel:+17192757238" className="hover:text-[#D4A853]">(719) 275-7238</a>
               </a>
             </div>
           </div>

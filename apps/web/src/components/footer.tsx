@@ -89,7 +89,7 @@ export default function Footer() {
                   <span>Vacation Rentals</span>
                   <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
                 </a>
-                <span className="text-xs text-[#7A9B7D]">Stay near the gorge</span>
+                <a href="tel:+17192757238" className="text-xs text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">(719) 275-7238</a>
               </li>
             </ul>
           </div>
