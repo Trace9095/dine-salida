@@ -2,8 +2,12 @@ import { Resend } from 'resend'
 
 let _resend: Resend | null = null
 
-function getResend() {
-  if (!_resend) _resend = new Resend(process.env['RESEND_API_KEY']!)
+function getResend(): Resend | null {
+  if (!process.env['RESEND_API_KEY']) {
+    console.warn('[email] RESEND_API_KEY not set — email sending disabled')
+    return null
+  }
+  if (!_resend) _resend = new Resend(process.env['RESEND_API_KEY'])
   return _resend
 }
 
@@ -22,6 +26,7 @@ export async function sendListingConfirmation({
   tier: string
 }) {
   const resend = getResend()
+  if (!resend) return
   const tierLabel = tier === 'premium' ? 'Premium ($99/mo)' : tier === 'sponsored' ? 'Sponsored ($199/mo)' : 'Free'
 
   await resend.emails.send({
@@ -57,6 +62,7 @@ export async function notifyCeoNewListing({
   restaurantId?: number
 }) {
   const resend = getResend()
+  if (!resend) return
 
   await resend.emails.send({
     from: `Dine Salida <${FROM}>`,
@@ -90,6 +96,7 @@ export async function sendRequestListingNotification({
   notes?: string
 }) {
   const resend = getResend()
+  if (!resend) return
 
   // Notify CEO
   await resend.emails.send({
@@ -107,6 +114,46 @@ export async function sendRequestListingNotification({
           ${notes ? `<tr><td style="padding: 8px 0; color: #7A9B7D;">Notes</td><td>${notes}</td></tr>` : ''}
         </table>
         <p><a href="https://dinesalida.com/admin" style="color: #F59E0B;">Go to admin</a></p>
+      </div>
+    `,
+  })
+}
+
+export async function sendSubscriptionConfirmed({
+  ownerEmail,
+  ownerName,
+  businessName,
+  tier,
+}: {
+  ownerEmail: string
+  ownerName: string
+  businessName: string
+  tier: string
+}) {
+  const resend = getResend()
+  if (!resend) return
+  const tierLabel = tier === 'premium' ? 'Premium ($99/mo)' : 'Sponsored ($199/mo)'
+  const appUrl = process.env['NEXT_PUBLIC_APP_URL'] ?? 'https://dinesalida.com'
+
+  await resend.emails.send({
+    from: `Dine Salida <${FROM}>`,
+    to: ownerEmail,
+    subject: `Your ${tierLabel} listing for ${businessName} is now live`,
+    html: `
+      <div style="font-family: sans-serif; max-width: 560px; margin: 0 auto; padding: 40px 20px;">
+        <h1 style="color: #F59E0B; font-size: 24px;">Your Listing Is Live</h1>
+        <p>Hi ${ownerName},</p>
+        <p>Great news — your <strong>${tierLabel}</strong> listing for <strong>${businessName}</strong> on Dine Salida is now active.</p>
+        <p>Diners in Salida and visitors from across Colorado can now find your business in our directory.</p>
+        <div style="margin: 24px 0; padding: 16px; background: #0D1117; border-left: 3px solid #F59E0B; border-radius: 4px;">
+          <p style="margin: 0; color: #E6EDF3; font-size: 14px;">
+            Manage your subscription anytime at<br/>
+            <a href="${appUrl}/manage" style="color: #F59E0B;">${appUrl}/manage</a>
+          </p>
+        </div>
+        <p>Questions? Reply to this email and we will get back to you promptly.</p>
+        <hr style="border-color: #253826; margin: 24px 0;" />
+        <p style="font-size: 13px; color: #7A9B7D;">Dine Salida — <a href="${appUrl}" style="color: #7A9B7D;">${appUrl}</a></p>
       </div>
     `,
   })

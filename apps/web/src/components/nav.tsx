@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: '/restaurants', label: 'Restaurants' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/add-listing', label: 'Add Listing' },
+  { href: '/manage', label: 'Manage' },
   { href: '/partners/whitewater-bar-grill', label: 'Worth the Drive' },
 ]
 

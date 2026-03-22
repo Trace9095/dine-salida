@@ -3,10 +3,11 @@ import Stripe from 'stripe'
 import { z } from 'zod'
 
 let _stripe: Stripe | null = null
-function getStripe() {
-  if (!_stripe) {
-    _stripe = new Stripe(process.env['STRIPE_SECRET_KEY']!)
+function getStripe(): Stripe {
+  if (!process.env['STRIPE_SECRET_KEY']) {
+    throw new Error('STRIPE_SECRET_KEY is not configured')
   }
+  if (!_stripe) _stripe = new Stripe(process.env['STRIPE_SECRET_KEY'])
   return _stripe
 }
 

@@ -48,6 +48,7 @@ export default function Footer() {
                 { href: '/blog', label: 'Dining Guide' },
                 { href: '/pricing', label: 'Pricing' },
                 { href: '/add-listing', label: 'Add Your Business' },
+                { href: '/manage', label: 'Manage Listing' },
                 { href: '/request-listing', label: 'Request a Listing' },
                 { href: '/partners/whitewater-bar-grill', label: 'Worth the Drive' },
               ].map((link) => (
