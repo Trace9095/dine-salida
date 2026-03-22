@@ -237,7 +237,7 @@ export default function RooftopSocialPage() {
                 <p className="font-semibold text-[#E6EDF3] group-hover:text-[#D4A853] transition-colors">
                   Royal Gorge Rafting
                 </p>
-                <p className="mt-0.5 text-sm text-[#8B949E]">Whitewater on the Arkansas River</p>
+                <p className="mt-0.5 text-sm text-[#8B949E]">(719) 275-7238 · Whitewater on the Arkansas</p>
               </div>
               <ExternalLink className="h-4 w-4 text-[#8B949E] group-hover:text-[#D4A853] transition-colors" aria-hidden="true" />
             </a>

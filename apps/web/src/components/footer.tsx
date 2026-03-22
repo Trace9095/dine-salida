@@ -69,24 +69,27 @@ export default function Footer() {
               Royal Gorge Area
             </h3>
             <ul className="space-y-3">
-              {[
-                { href: 'https://royalgorgerafting.net', label: 'Royal Gorge Rafting', sub: 'Whitewater on the Arkansas' },
-                { href: 'https://royalgorgeziplinetours.com', label: 'Royal Gorge Zipline', sub: 'Zip over the gorge' },
-                { href: 'https://royalgorgevacationrentals.com', label: 'Vacation Rentals', sub: 'Stay near the gorge' },
-              ].map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]"
-                  >
-                    <span>{item.label}</span>
-                    <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
-                  </a>
-                  <span className="text-xs text-[#7A9B7D]">{item.sub}</span>
-                </li>
-              ))}
+              <li>
+                <a href="https://royalgorgerafting.net" target="_blank" rel="noopener noreferrer" className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">
+                  <span>Royal Gorge Rafting</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
+                </a>
+                <a href="tel:+17192757238" className="text-xs text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">(719) 275-7238</a>
+              </li>
+              <li>
+                <a href="https://royalgorgeziplinetours.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">
+                  <span>Royal Gorge Zipline</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
+                </a>
+                <a href="tel:+17192757238" className="text-xs text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">(719) 275-7238</a>
+              </li>
+              <li>
+                <a href="https://royalgorgevacationrentals.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">
+                  <span>Vacation Rentals</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
+                </a>
+                <span className="text-xs text-[#7A9B7D]">Stay near the gorge</span>
+              </li>
             </ul>
           </div>
 
@@ -96,23 +99,20 @@ export default function Footer() {
               Canon City Dining
             </h3>
             <ul className="space-y-3">
-              {[
-                { href: 'https://whitewaterbar.com', label: 'Whitewater Bar & Grill', sub: '#1 near Royal Gorge' },
-                { href: 'https://wwrooftopsocial.com', label: 'Rooftop Social', sub: 'Downtown rooftop bar' },
-              ].map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]"
-                  >
-                    <span>{item.label}</span>
-                    <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
-                  </a>
-                  <span className="text-xs text-[#7A9B7D]">{item.sub}</span>
-                </li>
-              ))}
+              <li>
+                <a href="https://whitewaterbar.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">
+                  <span>Whitewater Bar &amp; Grill</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
+                </a>
+                <a href="tel:+17192691009" className="text-xs text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">(719) 269-1009</a>
+              </li>
+              <li>
+                <a href="https://wwrooftopsocial.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-1 text-sm text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">
+                  <span>Rooftop Social</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden="true" />
+                </a>
+                <a href="tel:+17194517241" className="text-xs text-[#7A9B7D] transition-colors hover:text-[#F59E0B]">(719) 451-7241</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -337,17 +337,41 @@ export default async function HomePage() {
           </div>
 
           {/* Royal Gorge day trips strip */}
-          <div className="mt-6 rounded-xl border border-[#30363D] bg-[#161B22] px-6 py-4">
-            <p className="text-sm text-[#8B949E]">
-              <span className="font-semibold text-[#D4A853]">Plan a full day trip:</span>{' '}
-              Combine Canon City dining with{' '}
-              <a href="https://royalgorgerafting.net" target="_blank" rel="noopener noreferrer" className="text-[#E6EDF3] underline decoration-[#30363D] underline-offset-2 transition-colors hover:text-[#D4A853] hover:decoration-[#D4A853]">whitewater rafting</a>
-              {', '}
-              <a href="https://royalgorgeziplinetours.com" target="_blank" rel="noopener noreferrer" className="text-[#E6EDF3] underline decoration-[#30363D] underline-offset-2 transition-colors hover:text-[#D4A853] hover:decoration-[#D4A853]">zipline tours</a>
-              {', and '}
-              <a href="https://royalgorgevacationrentals.com" target="_blank" rel="noopener noreferrer" className="text-[#E6EDF3] underline decoration-[#30363D] underline-offset-2 transition-colors hover:text-[#D4A853] hover:decoration-[#D4A853]">Royal Gorge vacation rentals</a>
-              {' — all within the same area.'}
-            </p>
+          <div className="mt-6 rounded-xl border border-[#30363D] bg-[#161B22] px-6 py-5">
+            <p className="mb-3 text-sm font-semibold text-[#D4A853]">Plan a full Royal Gorge day trip</p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://royalgorgerafting.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-[#8B949E] transition-colors hover:text-[#D4A853]"
+              >
+                <ExternalLink className="h-3.5 w-3.5 text-[#D4A853]" aria-hidden="true" />
+                <span>Royal Gorge Rafting</span>
+                <span className="text-[#30363D]">·</span>
+                <a href="tel:+17192757238" className="hover:text-[#D4A853]">(719) 275-7238</a>
+              </a>
+              <a
+                href="https://royalgorgeziplinetours.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-[#8B949E] transition-colors hover:text-[#D4A853]"
+              >
+                <ExternalLink className="h-3.5 w-3.5 text-[#D4A853]" aria-hidden="true" />
+                <span>Royal Gorge Zipline</span>
+                <span className="text-[#30363D]">·</span>
+                <a href="tel:+17192757238" className="hover:text-[#D4A853]">(719) 275-7238</a>
+              </a>
+              <a
+                href="https://royalgorgevacationrentals.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-[#8B949E] transition-colors hover:text-[#D4A853]"
+              >
+                <ExternalLink className="h-3.5 w-3.5 text-[#D4A853]" aria-hidden="true" />
+                <span>Vacation Rentals</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
