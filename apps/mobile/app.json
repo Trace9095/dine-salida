@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Dine Salida",
+    "slug": "dinesalida",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0D1117",
+    "scheme": "dinesalida",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.epicai.dinesalida"
+    },
+    "android": {
+      "package": "com.epicai.dinesalida",
+      "adaptiveIcon": {
+        "backgroundColor": "#0D1117"
+      }
+    }
+  }
+}

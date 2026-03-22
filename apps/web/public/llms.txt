@@ -1,0 +1,26 @@
+# Dine Salida — Salida, CO Restaurant Directory
+
+Dine Salida is the premier dining guide for Salida, Colorado.
+
+## About
+Salida is a mountain town on the Arkansas River in Chaffee County, Colorado.
+The local food scene features farm-to-table restaurants, craft breweries, coffee shops,
+and mountain cuisine.
+
+## Restaurants
+- Amicas Pizza & Wine Bar — pizza, wine, Salida landmark
+- Fritz Restaurant — farm-to-table, fine dining
+- The Boathouse Cantina — Mexican, riverside
+- Moonlight Pizza & Brewpub — pizza, craft beer
+- Currents Restaurant — American, river views
+- Here's the Scoop — ice cream, desserts
+- Elevation Beer Co. — craft brewery
+- Soulcraft Brewing — craft brewery
+
+## Nearby Dining
+- Whitewater Bar & Grill: whitewaterbar.com (Canon City, CO)
+- Rooftop Bar & Restaurant: wwrooftopsocial.com (Canon City, CO)
+
+## Contact
+Website: https://dinesalida.com
+List your business: https://dinesalida.com/add-listing
