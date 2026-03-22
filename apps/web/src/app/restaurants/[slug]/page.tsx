@@ -7,6 +7,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 import ReviewForm from './review-form'
 import RestaurantCard from '@/components/restaurant-card'
+import { BookingButton } from '@/components/BookingButton'
 import { getDb } from '@/db'
 import { schema } from '@/db'
 import { eq } from 'drizzle-orm'
@@ -195,14 +196,13 @@ export default async function RestaurantPage({ params }: PageProps) {
 
         <div className="mb-10 flex flex-wrap gap-3">
           {restaurant.bookingUrl && (
-            <a
+            <BookingButton
               href={restaurant.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              businessName={restaurant.name}
               className="flex min-h-[44px] items-center gap-2 rounded-lg bg-[#D4A853] px-6 font-semibold text-[#0D1117] transition-colors hover:bg-[#E8C97A]"
             >
               Book a Table
-            </a>
+            </BookingButton>
           )}
           {restaurant.menuUrl && (
             <a

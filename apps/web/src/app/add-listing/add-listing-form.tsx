@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Send, CheckCircle } from 'lucide-react'
 import { SALIDA_CATEGORIES } from '@/data/categories'
 import { slugify } from '@/lib/utils'
+import { trackEvent } from '@/lib/analytics'
 
 const PRICE_RANGES = ['$', '$$', '$$$', '$$$$']
 
@@ -87,6 +88,7 @@ export default function AddListingForm() {
         }),
       })
       if (res.ok) {
+        trackEvent('claim_listing', { tier: 'premium', city: 'Salida' })
         setStatus('success')
         setForm(INITIAL)
       } else {
