@@ -11,6 +11,7 @@ import { getDb } from '@/db'
 import { schema } from '@/db'
 import { eq } from 'drizzle-orm'
 import { formatPhone } from '@/lib/utils'
+export const dynamic = 'force-dynamic'
 
 interface PageProps {
   params: Promise<{ slug: string }>

@@ -6,6 +6,7 @@ import ClaimForm from './claim-form'
 import { getDb } from '@/db'
 import { schema } from '@/db'
 import { eq } from 'drizzle-orm'
+export const dynamic = 'force-dynamic'
 
 interface PageProps {
   params: Promise<{ slug: string }>

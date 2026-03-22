@@ -6,6 +6,7 @@ import { getDb } from '@/db'
 import { schema } from '@/db'
 import { SALIDA_CATEGORIES } from '@/data/categories'
 import type { Metadata } from 'next'
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Restaurants',

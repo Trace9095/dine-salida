@@ -8,6 +8,7 @@ import { getDb } from '@/db'
 import { schema } from '@/db'
 import { eq, desc } from 'drizzle-orm'
 import { SALIDA_CATEGORIES } from '@/data/categories'
+export const dynamic = 'force-dynamic'
 
 async function getFeaturedRestaurants() {
   try {
