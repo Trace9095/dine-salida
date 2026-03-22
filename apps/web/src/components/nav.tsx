@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, MapPin } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const NAV_LINKS = [
@@ -24,11 +24,42 @@ export default function Nav() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex min-h-[44px] items-center gap-2"
+            className="flex min-h-[44px] items-center gap-2.5"
             onClick={() => setOpen(false)}
+            aria-label="Dine Salida — Home"
           >
-            <MapPin className="h-5 w-5 text-[#D4A853]" aria-hidden="true" />
-            <span className="text-lg font-bold text-[#D4A853]">Dine Salida</span>
+            {/* Mountain + fork mark */}
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              {/* Dark rounded background */}
+              <rect width="28" height="28" rx="6" fill="#161B22" />
+              {/* Mountain left slope */}
+              <line x1="14" y1="4" x2="5" y2="16" stroke="#D4A853" strokeWidth="2" strokeLinecap="round" />
+              {/* Mountain right slope */}
+              <line x1="14" y1="4" x2="23" y2="16" stroke="#D4A853" strokeWidth="2" strokeLinecap="round" />
+              {/* Mountain base */}
+              <line x1="5" y1="16" x2="23" y2="16" stroke="#D4A853" strokeWidth="1.5" strokeLinecap="round" />
+              {/* Snow cap highlight */}
+              <line x1="14" y1="4" x2="10.5" y2="10" stroke="#F5D78A" strokeWidth="1.5" strokeLinecap="round" />
+              <line x1="14" y1="4" x2="17.5" y2="10" stroke="#F5D78A" strokeWidth="1.5" strokeLinecap="round" />
+              {/* Fork handle below */}
+              <rect x="12.5" y="18" width="3" height="7" rx="1.5" fill="#D4A853" />
+              {/* Fork tine left */}
+              <rect x="9.5" y="17" width="2" height="5" rx="1" fill="#D4A853" />
+              {/* Fork tine right */}
+              <rect x="16.5" y="17" width="2" height="5" rx="1" fill="#D4A853" />
+            </svg>
+            {/* Wordmark */}
+            <div className="flex flex-col leading-none">
+              <span className="text-[15px] font-bold tracking-tight text-[#D4A853]">Dine Salida</span>
+              <span className="text-[9px] font-medium tracking-widest text-[#8B949E] uppercase">Colorado</span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
