@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         name: 'What are the best restaurants in Salida, Colorado?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Top restaurants in Salida include Amicas Pizza & Wine Bar, Fritz Restaurant (farm-to-table fine dining), The Laughing Ladies Restaurant, Moonlight Pizza & Brewpub, and The Boathouse Cantina.',
+          text: 'Top restaurants in Salida include Shavano (award-winning farm-to-table fine dining), Amicas Pizza & Microbrewery, Currents Steaks & Seafood, Moonlight Pizza & Brewpub, and The Boathouse Cantina.',
         },
       },
       {

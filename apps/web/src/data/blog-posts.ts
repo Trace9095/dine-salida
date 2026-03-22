@@ -95,14 +95,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Top Restaurant Picks for 2025</h2>
 
-<h3>Fritz Restaurant — Fine Dining at Its Best</h3>
-<p>Fritz Restaurant is the gold standard for special occasion dining in Salida. Chef-driven seasonal menus showcase Colorado produce, grass-fed meats from nearby ranches, and artisan cheeses from regional creameries. The intimate dining room means reservations are essential — especially during summer rafting season. Expect dishes that change based on what is freshest from local farms. Fritz exemplifies the farm-to-table philosophy not as a marketing gimmick but as a genuine commitment to the regional food system.</p>
+<h3>Shavano — Fine Dining at Its Best</h3>
+<p>Shavano is the gold standard for special occasion dining in Salida — voted Best Restaurant and Best Dinner Menu at the 2025 Mountain Mail Best of Salida Awards. Chef-driven seasonal menus showcase Colorado produce, grass-fed meats from nearby ranches, and artisan cheeses from regional creameries. The intimate dining room on E Sackett Ave means reservations are wise — especially during summer rafting season. Shavano exemplifies the farm-to-table philosophy not as a marketing gimmick but as a genuine commitment to the regional food system.</p>
 
 <h3>Amicas Pizza & Wine Bar — A Salida Institution</h3>
 <p>Few restaurants have the staying power of Amicas. Open since 1996, this beloved pizza and wine bar has survived economic cycles, tourist booms, and changing food trends simply by doing what it does better than almost anyone: making exceptional wood-fired pizza and pairing it with a thoughtful wine list. The Margherita is a benchmark. The wine selection skews Italian and French with enough Colorado representation to feel local. Come early on weekends — the wait can be substantial and it is worth every minute.</p>
 
-<h3>Laughing Ladies Restaurant — Breakfast Worth Waking Up For</h3>
-<p>The Laughing Ladies is the kind of breakfast spot that travel writers dream about. The menu changes seasonally and reflects whatever is available from local farms and suppliers. Expect creative takes on eggs benedict, house-made pastries, and specials that make choosing difficult. The portions are generous and the atmosphere is warm without being precious. Lines form early on Saturday mornings — arrive before 9am or plan to wait.</p>
+<h3>Currents Steaks & Seafood — Elevated Dining Downtown</h3>
+<p>Currents Steaks & Seafood at 122 N F St is the place for prime cuts and fresh seafood in Salida. The menu combines quality Colorado beef with seasonal seafood preparations in an upscale-casual setting. The cocktail and wine program is thoughtfully curated. A reliable choice for a special dinner or a well-earned post-adventure splurge.</p>
 
 <h2>The Farm-to-Table Movement in Salida</h2>
 <p>What sets Salida apart from many small mountain towns is the genuine commitment among its restaurant community to sourcing locally. Several farms in the San Luis Valley and Chaffee County supply vegetables, herbs, and proteins to multiple restaurants simultaneously. This creates a virtuous cycle: local farms have reliable buyers, restaurants have access to exceptional fresh ingredients, and diners get food that was often harvested within 100 miles the same day it was served.</p>
@@ -111,7 +111,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Just one hour east of Salida on US-50, Canon City has two dining destinations worth a dedicated trip. <a href="https://whitewaterbar.com" target="_blank" rel="noopener noreferrer">Whitewater Bar &amp; Grill</a> (45045 Hwy 50 West, <a href="tel:+17192691009">(719) 269-1009</a>) is the #1 restaurant in Canon City — Colorado-raised beef, outdoor patio, live music, open April 17 through October 31. For dinner and cocktails, <a href="https://wwrooftopsocial.com" target="_blank" rel="noopener noreferrer">Rooftop Social</a> (302 Royal Gorge Blvd, <a href="tel:+17194517241">(719) 451-7241</a>) offers stunning mountain views from a 2,000 sq ft open-air rooftop patio, open daily 11am–9pm.</p>
 
 <h2>Planning Your Salida Dining Experience</h2>
-<p>Summer and fall (June through October) are peak seasons in Salida. Rafting companies, outdoor outfitters, and the famous Fibark festival draw thousands of visitors, and restaurants fill quickly. Make reservations for Fritz and other fine dining establishments at least a week in advance during summer. Breweries and casual spots like Amicas and Moonlight operate on a first-come basis. In the off-season (November through March), the dining scene quiets considerably but several beloved spots maintain year-round hours with reduced capacity.</p>
+<p>Summer and fall (June through October) are peak seasons in Salida. Rafting companies, outdoor outfitters, and the famous Fibark festival draw thousands of visitors, and restaurants fill quickly. Make reservations for Shavano and other fine dining establishments at least a week in advance during summer. Breweries and casual spots like Amicas and Moonlight operate on a first-come basis. In the off-season (November through March), the dining scene quiets considerably but several beloved spots maintain year-round hours with reduced capacity.</p>
     `,
   },
   {
@@ -151,16 +151,16 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2025-05-10',
     imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
     metaDescription:
-      'Explore the farm-to-table dining movement in Salida, Colorado. Learn how Fritz Restaurant, The Laughing Ladies, and other chefs are building a genuine local food system in the Arkansas Valley.',
+      'Explore the farm-to-table dining movement in Salida, Colorado. Learn how Shavano, Currents Steaks & Seafood, and other chefs are building a genuine local food system in the Arkansas Valley.',
     content: `
 <h2>A Mountain Town Food Movement</h2>
 <p>The phrase "farm-to-table" has become so ubiquitous in restaurant marketing that it has nearly lost meaning. But in Salida, Colorado, the concept is lived rather than merely advertised. A small but fiercely committed community of chefs, farmers, ranchers, and food producers has built something genuinely rare: a local food system that actually works at scale in a remote mountain environment.</p>
 
-<h2>Fritz Restaurant — The Standard Bearer</h2>
-<p>Fritz Restaurant's commitment to sourcing begins before the menu is written. The kitchen operates on a seasonal rotation that responds to what is available from farm partners rather than the other way around. This means the menu can change weekly, sometimes more frequently. Diners who visited in late summer may encounter an entirely different lineup in early fall as the harvest shifts from tomatoes and corn to squash, root vegetables, and hearty greens. The cattle and lamb on Fritz's menu are sourced from ranches in Chaffee County and the San Luis Valley, where the high-altitude grass produces exceptionally flavored meat.</p>
+<h2>Shavano — The Standard Bearer</h2>
+<p>Shavano's commitment to sourcing begins before the menu is written. The kitchen operates on a seasonal rotation that responds to what is available from farm partners rather than the other way around. Named for the iconic 14er, Shavano earned the 2025 Mountain Mail Best of Salida Award for Best Restaurant — recognition from the community that knows the food scene best. Diners who visit in late summer may encounter an entirely different lineup in early fall as the harvest shifts from tomatoes and corn to squash, root vegetables, and hearty greens. Cattle and lamb are sourced from ranches in Chaffee County and the San Luis Valley.</p>
 
-<h2>The Laughing Ladies — Breakfast Done Right</h2>
-<p>The Laughing Ladies Restaurant proves that farm-to-table thinking applies equally well to breakfast and lunch as it does to dinner. The kitchen sources produce from farms within a reasonable drive whenever possible. The result is breakfast that tastes noticeably better than the average morning meal — richer yolks, more flavorful tomatoes, herbs that smell like they were cut this morning. The Laughing Ladies also serves as an important anchor for local farmers by providing a reliable market for imperfect or unusual varieties that grocery stores would reject.</p>
+<h2>Currents Steaks & Seafood — Elevated and Local</h2>
+<p>Currents Steaks & Seafood at 122 N F St brings prime cuts and seasonal seafood to downtown Salida. The kitchen sources Colorado beef and works within the broader local food supply chain to deliver dishes that taste of the place. The result is an elevated dining experience — richer flavors, carefully sourced proteins, and a menu that respects the region's agricultural identity. Currents also serves as an important anchor for Salida's dining scene by maintaining year-round upscale service in a town that can lean seasonal.</p>
 
 <h2>The Local Food Supply Chain</h2>
 <p>The San Luis Valley, about an hour south of Salida, is one of Colorado's most productive agricultural regions despite its remote high-altitude location. Potato farms, greenhouse operations, and specialty vegetable growers in the valley supply multiple Salida restaurants. Closer to town, several small-scale producers in Chaffee County grow herbs, microgreens, and specialty crops specifically for the restaurant market. This direct relationship between farmer and chef — eliminating distributors whenever possible — allows both parties to plan ahead and experiment with varieties that would never make it into conventional supply chains.</p>
