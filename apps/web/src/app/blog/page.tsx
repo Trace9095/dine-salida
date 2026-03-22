@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
+import WorthTheDriveStrip from '@/components/worth-the-drive-strip'
 import { BLOG_POSTS } from '@/data/blog-posts'
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function BlogPage() {
           ))}
         </div>
       </main>
+      <WorthTheDriveStrip />
       <Footer />
     </div>
   )

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
+import WorthTheDriveStrip from '@/components/worth-the-drive-strip'
 import { BLOG_POSTS } from '@/data/blog-posts'
 
 interface PageProps {
@@ -135,6 +136,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         )}
       </main>
 
+      <WorthTheDriveStrip />
       <Footer />
 
       {/* FAQ JSON-LD — server-controlled structured data */}

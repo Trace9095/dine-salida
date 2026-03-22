@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 import RestaurantsClient from './restaurants-client'
+import { FeaturedPartnerRestaurants, DayTripAdventures } from '@/components/partner-restaurant-sections'
 import { getDb } from '@/db'
 import { schema } from '@/db'
 import { SALIDA_CATEGORIES } from '@/data/categories'
@@ -41,6 +42,9 @@ export default async function RestaurantsPage() {
             categories={SALIDA_CATEGORIES}
           />
         </Suspense>
+
+        <FeaturedPartnerRestaurants />
+        <DayTripAdventures />
       </main>
       <Footer />
     </div>
