@@ -4,7 +4,7 @@ export interface BlogPost {
   excerpt: string
   content: string
   date: string
-  imageUrl: string
+  imageUrl: string | null
   metaDescription: string
 }
 
@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Breakfast in Salida, lunch at the #1 restaurant near Royal Gorge, an afternoon on the water, and dinner on one of Colorado\'s best rooftop patios. Here is the perfect day trip itinerary.',
     date: '2026-03-22',
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    imageUrl: null,
     metaDescription:
       'The perfect Salida to Royal Gorge day trip itinerary. Flying into COS (2 hrs) or DEN (3 hrs)? Base in Salida — breakfast, 1-hour drive to Canon City, lunch at Whitewater Bar & Grill (719) 269-1009, afternoon rafting (719) 275-7238, dinner at Rooftop Social (719) 451-7241.',
     content: `
@@ -86,7 +86,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'From wood-fired pizza to farm-to-table fine dining, Salida\'s food scene punches well above its weight for a small Colorado mountain town.',
     date: '2025-03-01',
-    imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    imageUrl: null,
     metaDescription:
       'Discover the best restaurants in Salida, Colorado in 2025. Our guide covers top picks for farm-to-table dining, pizza, breweries, and mountain cuisine in this Arkansas Valley gem.',
     content: `
@@ -120,7 +120,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Salida has more craft breweries per capita than most Colorado cities. Here is your definitive guide to the taprooms, styles, and pint culture of the Arkansas Valley.',
     date: '2025-04-15',
-    imageUrl: 'https://images.unsplash.com/photo-1436076863939-06870fe779c2?w=800&q=80',
+    imageUrl: null,
     metaDescription:
       'A complete guide to craft breweries in Salida, Colorado. Covering Elevation Beer Co., Soulcraft Brewing, Moonlight Pizza & Brewpub, and the broader taproom culture of the Arkansas Valley.',
     content: `
@@ -149,7 +149,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'How a small mountain town became one of Colorado\'s most exciting destinations for locally sourced, chef-driven cuisine.',
     date: '2025-05-10',
-    imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    imageUrl: null,
     metaDescription:
       'Explore the farm-to-table dining movement in Salida, Colorado. Learn how Shavano, Currents Steaks & Seafood, and other chefs are building a genuine local food system in the Arkansas Valley.',
     content: `
@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'You\'ve just run the Royal Gorge or Brown\'s Canyon. Now what? Here are the best places to refuel after a day on the Arkansas River.',
     date: '2025-06-01',
-    imageUrl: 'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=800&q=80',
+    imageUrl: null,
     metaDescription:
       'The best restaurants and bars to visit after whitewater rafting in Salida, Colorado and the Royal Gorge area. Covering post-river dining at Whitewater Bar & Grill, Rooftop Social, Moonlight Pizza, and more.',
     content: `

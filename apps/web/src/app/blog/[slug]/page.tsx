@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: post.title,
       description: post.metaDescription,
-      images: [{ url: post.imageUrl }],
+      ...(post.imageUrl ? { images: [{ url: post.imageUrl }] } : {}),
     },
   }
 }
@@ -74,17 +74,23 @@ export default async function BlogPostPage({ params }: PageProps) {
       <Nav />
 
       {/* Hero */}
-      <div className="relative h-64 w-full sm:h-80">
-        <Image
-          src={post.imageUrl}
-          alt={post.title}
-          fill
-          sizes="100vw"
-          priority
-          quality={90}
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/50 via-transparent to-transparent" />
+      <div className="relative h-64 w-full bg-[#0D1117] sm:h-80">
+        {post.imageUrl ? (
+          <>
+            <Image
+              src={post.imageUrl}
+              alt={post.title}
+              fill
+              sizes="100vw"
+              priority
+              quality={90}
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/50 via-transparent to-transparent" />
+          </>
+        ) : (
+          <div className="flex h-full items-center justify-center bg-gradient-to-br from-[#D4A853]/20 via-[#161B22] to-[#0D1117]" />
+        )}
       </div>
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">

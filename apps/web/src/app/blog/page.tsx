@@ -29,15 +29,19 @@ export default function BlogPage() {
               key={post.slug}
               className="group overflow-hidden rounded-xl border border-[#30363D] bg-[#161B22] transition-colors hover:border-[#D4A853]/50"
             >
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={post.imageUrl}
-                  alt={post.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  quality={90}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+              <div className="relative h-48 overflow-hidden bg-[#0D1117]">
+                {post.imageUrl ? (
+                  <Image
+                    src={post.imageUrl}
+                    alt={post.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="flex h-full items-center justify-center bg-gradient-to-br from-[#D4A853]/20 via-[#161B22] to-[#0D1117]" />
+                )}
               </div>
               <div className="p-6">
                 <time className="text-xs text-[#8B949E]">

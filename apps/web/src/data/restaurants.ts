@@ -9,7 +9,7 @@ export interface RestaurantSeed {
   hours: string
   cuisineType: string
   priceRange: '$' | '$$' | '$$$' | '$$$$'
-  imageUrl: string
+  imageUrl: string | null
   neighborhood: string
   featured: boolean
   bookingUrl: string | null
@@ -31,7 +31,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Sat 11am–9pm, Sun 11am–8pm',
     cuisineType: 'Pizza & Wine',
     priceRange: '$$',
-    imageUrl: '/images/rt/wineontable.webp',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: true,
     bookingUrl: null,
@@ -51,7 +51,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Wed–Sun Breakfast 7:30am–12:30pm, Dinner 4:30pm–9pm',
     cuisineType: 'American Farm-to-Table',
     priceRange: '$$$',
-    imageUrl: '/images/rt/event-private.webp',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: true,
     bookingUrl: null,
@@ -71,7 +71,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Sun–Thu 11am–8pm, Fri–Sat 11am–9pm',
     cuisineType: 'Mexican',
     priceRange: '$',
-    imageUrl: '/images/wwbg/margaritas.jpg',
+    imageUrl: null,
     neighborhood: 'Riverside',
     featured: false,
     bookingUrl: null,
@@ -91,7 +91,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Thu 11am–9pm, Fri–Sat 11am–10pm, Sun 11am–8pm',
     cuisineType: 'Pizza & Craft Beer',
     priceRange: '$$',
-    imageUrl: '/images/wwbg/wwbg-bar-view.jpg',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: true,
     bookingUrl: null,
@@ -99,7 +99,6 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     lat: '38.5362',
     lng: '-106.0003',
   },
-  {
   {
     name: 'Moonlight Pizza & Brewpub',
     slug: 'moonlight-pizza-brewpub-salida',
@@ -112,7 +111,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Daily 11am–10pm',
     cuisineType: 'Pizza & Craft Beer',
     priceRange: '$$',
-    imageUrl: '/images/wwbg/wwbg-outdoor-space.jpg',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: false,
     bookingUrl: null,
@@ -132,7 +131,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Daily 11am–9pm (seasonal hours vary)',
     cuisineType: 'Ice Cream & Desserts',
     priceRange: '$',
-    imageUrl: '/images/rt/rooftop-patio.webp',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: false,
     bookingUrl: null,
@@ -152,7 +151,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Thu 11am–9pm, Fri–Sat 11am–10pm, Sun 11am–8pm',
     cuisineType: 'Craft Brewery',
     priceRange: '$',
-    imageUrl: '/images/wwbg/wwbg-interior.jpg',
+    imageUrl: null,
     neighborhood: 'Poncha Springs',
     featured: false,
     bookingUrl: null,
@@ -172,7 +171,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Thu 2pm–9pm, Fri–Sat 12pm–10pm, Sun 12pm–8pm',
     cuisineType: 'Craft Brewery',
     priceRange: '$',
-    imageUrl: '/images/wwbg/live-music.jpg',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: false,
     bookingUrl: null,
@@ -192,7 +191,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Fri 6am–5pm, Sat–Sun 7am–4pm',
     cuisineType: 'Coffee & Cafe',
     priceRange: '$',
-    imageUrl: '/images/rt/drinkonpatio.webp',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: false,
     bookingUrl: null,
@@ -212,7 +211,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Mon–Thu 12pm–9pm, Fri 12pm–10pm',
     cuisineType: 'Steaks & Seafood',
     priceRange: '$$$',
-    imageUrl: '/images/wwbg/patio-dining.jpg',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: true,
     bookingUrl: null,
@@ -232,7 +231,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     hours: 'Daily 4pm–11pm',
     cuisineType: 'Bar & Cocktails',
     priceRange: '$$',
-    imageUrl: '/images/wwbg/old-fashioned.jpg',
+    imageUrl: null,
     neighborhood: 'Downtown',
     featured: false,
     bookingUrl: null,
