@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   openGraph: { siteName: 'Dine Salida', type: 'website', locale: 'en_US' },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
 }
 
 export default function RootLayout({
