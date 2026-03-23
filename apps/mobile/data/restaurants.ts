@@ -24,17 +24,6 @@ export const SALIDA_RESTAURANTS: RestaurantMobile[] = [
     featured: true,
   },
   {
-    name: 'Fritz Restaurant',
-    slug: 'fritz-restaurant',
-    shortDescription: 'Farm-to-table American fine dining in the heart of downtown Salida.',
-    cuisineType: 'American Fine Dining',
-    priceRange: '$$$',
-    address: '26 E 1st St, Salida, CO 81201',
-    website: 'https://fritzrestaurant.net',
-    neighborhood: 'Downtown',
-    featured: true,
-  },
-  {
     name: 'The Boathouse Cantina',
     slug: 'the-boathouse-cantina',
     shortDescription: 'Riverside Mexican cantina with a lively patio overlooking the Arkansas River.',

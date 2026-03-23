@@ -44,7 +44,7 @@ export const SALIDA_RESTAURANTS: RestaurantSeed[] = [
     slug: 'shavano',
     shortDescription: 'Award-winning farm-to-table restaurant — Best Restaurant in Salida 2025.',
     description:
-      "Shavano is Salida's top-rated fine dining destination, voted Best Restaurant, Best Dinner Menu, Best Place for a Night Out, and Best New Business at the 2025 Mountain Mail Best of Salida Awards. Named for the iconic 14er, Shavano serves chef-driven farm-to-table cuisine in a warm, intimate downtown setting. Breakfast and dinner service with a seasonal menu celebrating Colorado ingredients. Located at the former Fritz Restaurant space on E Sackett Ave.",
+      "Shavano is Salida's top-rated fine dining destination, voted Best Restaurant, Best Dinner Menu, Best Place for a Night Out, and Best New Business at the 2025 Mountain Mail Best of Salida Awards. Named for the iconic 14er, Shavano serves chef-driven farm-to-table cuisine in a warm, intimate downtown setting. Breakfast and dinner service with a seasonal menu celebrating Colorado ingredients. Located on E Sackett Ave in the heart of downtown.",
     address: '113 E Sackett Ave, Salida, CO 81201',
     phone: '(719) 539-0364',
     website: 'https://www.friendsofshavano.com',
