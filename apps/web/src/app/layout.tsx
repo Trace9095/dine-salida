@@ -57,3 +57,4 @@ export default function RootLayout({
     </html>
   )
 }
+// GA4 + GSC v2 - 2026-03-23
