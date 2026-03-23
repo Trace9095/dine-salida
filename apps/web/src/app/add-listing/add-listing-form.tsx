@@ -200,7 +200,7 @@ export default function AddListingForm() {
               value={form.imageUrl}
               onChange={set('imageUrl')}
               className={inputCls(false)}
-              placeholder="https://images.unsplash.com/..."
+              placeholder="https://yourbusiness.com/photo.jpg"
             />
           </Field>
         </div>
