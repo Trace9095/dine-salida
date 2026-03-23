@@ -9,26 +9,18 @@ interface ClaimFormProps {
 
 const TIERS = [
   {
-    id: 'free' as const,
-    label: 'Free',
-    price: '$0',
-    description: 'Basic listing with address, phone, and hours.',
-    icon: CheckCircle,
-    features: ['Address & phone', 'Hours', 'Category tags', 'Searchable listing'],
-  },
-  {
     id: 'premium' as const,
     label: 'Premium',
-    price: '$49/mo',
-    description: 'Enhanced profile with photos, booking link, and priority placement.',
+    price: '$99/mo',
+    description: 'Full profile with photos, booking link, and priority placement.',
     icon: TrendingUp,
-    features: ['Everything in Free', 'Photo gallery', 'Booking & menu links', 'Priority in search'],
+    features: ['Address, phone & hours', 'Photo gallery', 'Booking & menu links', 'Priority in search', 'Category tags'],
     popular: true,
   },
   {
     id: 'sponsored' as const,
     label: 'Sponsored',
-    price: '$99/mo',
+    price: '$199/mo',
     description: 'Top placement, homepage feature, gold badge, and analytics.',
     icon: Award,
     features: ['Everything in Premium', 'Homepage feature', 'Gold badge', 'Top of search', 'Analytics'],
@@ -36,7 +28,7 @@ const TIERS = [
 ]
 
 export default function ClaimForm({ restaurant }: ClaimFormProps) {
-  const [tier, setTier] = useState<'free' | 'premium' | 'sponsored'>('free')
+  const [tier, setTier] = useState<'premium' | 'sponsored'>('premium')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -49,53 +41,28 @@ export default function ClaimForm({ restaurant }: ClaimFormProps) {
     setStatus('loading')
     setError('')
 
-    if (tier === 'free') {
-      try {
-        const res = await fetch('/api/listings', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            restaurantId: restaurant.id,
-            ownerEmail: email,
-            ownerName: name,
-            ownerPhone: phone,
-            tier: 'free',
-          }),
-        })
-        if (res.ok) {
-          setStatus('success')
-        } else {
-          setError('Failed to submit. Please try again.')
-          setStatus('error')
-        }
-      } catch {
-        setError('Network error. Please try again.')
+    // All tiers are paid → Stripe checkout
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          tier,
+          restaurantId: restaurant.id,
+          ownerEmail: email,
+          ownerName: name,
+        }),
+      })
+      const data = (await res.json()) as { url?: string; error?: string }
+      if (data.url) {
+        window.location.href = data.url
+      } else {
+        setError(data.error ?? 'Failed to create checkout session.')
         setStatus('error')
       }
-    } else {
-      // Paid tier → Stripe checkout
-      try {
-        const res = await fetch('/api/checkout', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            tier,
-            restaurantId: restaurant.id,
-            ownerEmail: email,
-            ownerName: name,
-          }),
-        })
-        const data = (await res.json()) as { url?: string; error?: string }
-        if (data.url) {
-          window.location.href = data.url
-        } else {
-          setError(data.error ?? 'Failed to create checkout session.')
-          setStatus('error')
-        }
-      } catch {
-        setError('Network error. Please try again.')
-        setStatus('error')
-      }
+    } catch {
+      setError('Network error. Please try again.')
+      setStatus('error')
     }
   }
 
@@ -214,8 +181,6 @@ export default function ClaimForm({ restaurant }: ClaimFormProps) {
       >
         {status === 'loading'
           ? 'Processing...'
-          : tier === 'free'
-          ? 'Claim Free Listing'
           : `Continue to Payment — ${TIERS.find((t) => t.id === tier)?.price}`}
       </button>
     </form>
