@@ -118,8 +118,23 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Also Explore — Salida */}
+        <div className="pb-6 mt-10">
+          <p className="text-[#6B7280] text-xs uppercase tracking-wider font-medium mb-3">
+            Also Explore Salida
+          </p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a href="https://visitsalida.co" target="_blank" rel="noopener noreferrer" className="text-[#8B949E] text-sm hover:text-[#D4A853] transition-colors">
+              Visit Salida
+            </a>
+            <a href="https://shopsalida.com" target="_blank" rel="noopener noreferrer" className="text-[#8B949E] text-sm hover:text-[#D4A853] transition-colors">
+              Shop Salida
+            </a>
+          </div>
+        </div>
+
         {/* Bottom bar */}
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-[#2A2A2A] pt-6 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-[#2A2A2A] pt-6 sm:flex-row">
           <p className="text-xs text-[#8B949E]">
             &copy; {year} Dine Salida. Independent dining guide for Salida, Colorado.
           </p>
