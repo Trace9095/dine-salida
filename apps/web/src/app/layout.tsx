@@ -67,7 +67,10 @@ export default function RootLayout({
         )}
       </head>
       <body className="bg-[#0D1117] text-[#E6EDF3] antialiased">
-        {children}
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
+        <main id="main-content">{children}</main>
         <Analytics />
         <SpeedInsights />
       </body>
